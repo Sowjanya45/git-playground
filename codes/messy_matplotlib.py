@@ -11,8 +11,11 @@ df = pd.DataFrame({'x': x, 'y': y, 'group': np.random.choice(['grpA','grpB','grp
 # === TASK 1: Create a proper figure and axis object ===
 # Replace None with correct syntax
 # Expected: Figure with single axis, size 10x5
-fig, ax = None  
-
+  
+fig, ax = plt.subplots(figsize=(10, 5))
+print(fig)
+print(ax)
+plt.show()
 # === TASK 2: Plot a line with proper styling ===
 # Expected: Blue dashed line with legend label "Sine Wave"
 # ax.plot(None)
@@ -43,3 +46,4 @@ plt.colorbar(None)
 fig, axes = None  
 axes[0].plot(x, y)
 axes[1].scatter(x, y)
+
