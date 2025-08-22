@@ -15,11 +15,13 @@ df = pd.DataFrame({'x': x, 'y': y, 'group': np.random.choice(['grpA','grpB','grp
 fig, ax = plt.subplots(figsize=(10, 5))
 print(fig)
 print(ax)
-plt.show()
+
 # === TASK 2: Plot a line with proper styling ===
 # Expected: Blue dashed line with legend label "Sine Wave"
 # ax.plot(None)
-
+ax.plot(df['x'],df['y'],label="Sine Wave",color='blue',linestyle='--')
+ax.legend()
+plt.show()
 # === TASK 3: Add proper axis labels and title ===
 # Replace None with correct syntax
 ax.set(None) 
